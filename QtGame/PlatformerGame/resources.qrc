@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/graphics">
+        <file>Resources/chibiProt.png</file>
+        <file>Resources/grumpy.png</file>
+        <file>Resources/brickwall.jpg</file>
+    </qresource>
+    <qresource prefix="/sounds"/>
+</RCC>

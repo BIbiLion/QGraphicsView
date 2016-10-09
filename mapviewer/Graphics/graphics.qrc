@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/main_icon.png</file>
+        <file>images/open.png</file>
+        <file>images/pin.png</file>
+        <file>images/pinR.png</file>
+        <file>images/save.png</file>
+        <file>images/upload.png</file>
+        <file>images/zoom_in.png</file>
+        <file>images/zoom_out.png</file>
+        <file>images/map.png</file>
+        <file>images/defaultmap.jpg</file>
+    </qresource>
+</RCC>

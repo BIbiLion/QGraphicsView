@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ItemScene</class>
+ <widget class="QMainWindow" name="ItemScene">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>952</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ItemScene</string>
+  </property>
+  <widget class="QMdiArea" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>952</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSome">
+    <property name="title">
+     <string>Some</string>
+    </property>
+    <addaction name="actionPoke"/>
+    <addaction name="actionAdd80"/>
+    <addaction name="actionAdd1000000"/>
+   </widget>
+   <widget class="QMenu" name="menuMove_camera_to">
+    <property name="title">
+     <string>Move camera to..</string>
+    </property>
+    <addaction name="actionMoveto0x0"/>
+    <addaction name="actionMoveToM100xM100"/>
+    <addaction name="action_150_x_100"/>
+   </widget>
+   <widget class="QMenu" name="menuZoom">
+    <property name="title">
+     <string>Zoom</string>
+    </property>
+    <addaction name="actionZoomIn"/>
+    <addaction name="actionZoomOut"/>
+    <addaction name="actionResetZoom"/>
+   </widget>
+   <addaction name="menuSome"/>
+   <addaction name="menuMove_camera_to"/>
+   <addaction name="menuZoom"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="KeyDropper" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>231</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdNumber">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>64</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionPoke">
+   <property name="text">
+    <string>Poke</string>
+   </property>
+  </action>
+  <action name="actionAdd80">
+   <property name="text">
+    <string>Make sub-window with 80 entries</string>
+   </property>
+  </action>
+  <action name="actionAdd1000000">
+   <property name="text">
+    <string>Make sub-window with million entries</string>
+   </property>
+  </action>
+  <action name="actionMoveto0x0">
+   <property name="text">
+    <string>0x0</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionMoveToM100xM100">
+   <property name="text">
+    <string>-128 x -128</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_150_x_100">
+   <property name="text">
+    <string>+150 x -100</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="text">
+    <string>ZoomIn</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="text">
+    <string>ZoomOut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionResetZoom">
+   <property name="text">
+    <string>ResetZoom</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>KeyDropper</class>
+   <extends>QDockWidget</extends>
+   <header>key_dropper.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
